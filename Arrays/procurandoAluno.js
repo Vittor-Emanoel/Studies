@@ -23,11 +23,11 @@ const listaDeALunoEmedias = [alunos, medias]
 function adiciona(aluno) {
   //se retorna verdade ou seja tiver o aluno ele retornará isso.
   if (listaDeALunoEmedias[0].includes(aluno)) {
-    console.log(`${aluno} está cadastrado!`)
+    const alunos = listaDeALunoEmedias[0]
 
-    const index = listaDeALunoEmedias[0].indexOf(aluno)
+    const index = alunos.indexOf(aluno)
     //acessando o array de notas e usando a posição do aluno para retornar a nota
-    const encontrarMedia = listaDeALunoEmedias[1][index]
+    const encontrarMedia = alunos[1][index]
 
     console.log(`o ${aluno} tem a media ${encontrarMedia}`)
   } else {
