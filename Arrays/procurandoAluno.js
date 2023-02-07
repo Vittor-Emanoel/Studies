@@ -23,8 +23,12 @@ const listaDeALunoEmedias = [alunos, medias]
 function adiciona(aluno) {
   //se retorna verdade ou seja tiver o aluno ele retornará isso.
   if (listaDeALunoEmedias[0].includes(aluno)) {
-    const alunos = listaDeALunoEmedias[0]
-    const medias = listaDeALunoEmedias[1]
+    // const alunos = listaDeALunoEmedias[0]
+    // const medias = listaDeALunoEmedias[1]
+
+    //desestruturação
+
+    const [alunos, medias] = listaDeALunoEmedias
 
     const index = alunos.indexOf(aluno)
     //acessando o array de notas e usando a posição do aluno para retornar a nota
