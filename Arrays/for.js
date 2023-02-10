@@ -7,6 +7,6 @@ const numeros = [100, 200, 300, 400, 500, 600]
 //3 - condição de parada
 
 //verifica se a condição é verdadeira, quando ficar false ela quebra
-for (let indice = 0; indice < 6; indice++) {
-  console.log('oi')
+for (let indice = 0; indice < numeros.length; indice++) {
+  console.log(numeros[indice])
 }
